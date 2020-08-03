@@ -20,6 +20,14 @@ module.exports = {
         allowNull: false,
         type: DataTypes.STRING,
       },
+      tick: {
+        type: DataTypes.FLOAT,
+        defaultValue: 1
+      },
+      tickValue: {
+        type: DataTypes.FLOAT,
+        defaultValue: 1
+      },
       createdAt: {
         allowNull: false,
         type: DataTypes.DATE,

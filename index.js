@@ -31,8 +31,9 @@ async function main() {
       
       const symbolRes = new Object();
       symbolRes.symbol = s.symbol;
-      symbolRes.last = $("#last_last").text();  
-      symbolRes.change = $("span.arial_20.parentheses").text();      
+      symbolRes.name = s.name;
+      symbolRes.last = $("#last_last").text();
+      symbolRes.change = $("span.arial_20.parentheses").text();
 
       return symbolRes;
     })
@@ -44,7 +45,7 @@ async function main() {
 
 app.get('/prices', (req, res) => {
   main().then((s) => {
-      res.send(s);      
+    res.send(s);      
   });
 });
 

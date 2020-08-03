@@ -7,14 +7,14 @@ module.exports = {
         primaryKey: true,
         type: DataTypes.INTEGER,
       },
-      buy: {
-        allowNull: true,
-        type: DataTypes.FLOAT
+      user_id: {
+        allowNull: false,
+        type: DataTypes.INTEGER
       },
-      sell: {
-        allowNull: true,
-        type: DataTypes.FLOAT
-      },
+      name: {
+        allowNull: false,
+        type: DataTypes.STRING
+      },      
       createdAt: {
         allowNull: false,
         type: DataTypes.DATE,

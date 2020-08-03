@@ -1,9 +1,7 @@
-const Symbol = require("./symbol");
-
 module.exports = (sequelize, DataTypes) => {
   const Wallet = sequelize.define('Wallet', {
-    buy: DataTypes.FLOAT,
-    sell: DataTypes.FLOAT,
+    user_id: DataTypes.INTEGER,
+    name: DataTypes.STRING,
   });
 
   //Wallet.hasMany(Symbol);
