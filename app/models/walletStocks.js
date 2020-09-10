@@ -3,6 +3,10 @@ module.exports = (sequelize, DataTypes) => {
     symbol_id: DataTypes.INTEGER,
     buy: DataTypes.FLOAT,    
     sell: DataTypes.FLOAT,
+    direction: {
+      type: DataTypes.TINYINT,
+      defaultValue: 1
+    },
     quantity: DataTypes.FLOAT,
     closedAt: DataTypes.DATE
   });

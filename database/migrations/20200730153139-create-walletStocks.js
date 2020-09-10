@@ -21,6 +21,9 @@ module.exports = {
       sell: {
         type: DataTypes.FLOAT
       },      
+      direction: {
+        type: DataTypes.TINYINT
+      },      
       quantity: {
         type: DataTypes.INTEGER,
         defaultValue: 1

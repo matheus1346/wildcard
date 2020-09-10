@@ -1,3 +1,4 @@
+// npx sequelize init
 module.exports = {
   username: 'root',
   password: null,
